@@ -37,8 +37,8 @@
 
     <EditText
         android:id="@+id/priceTextView"
-        android:layout_width="138dp"
-        android:layout_height="37dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:focusable="false"
         android:inputType="textPersonName"
@@ -130,6 +130,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="20dp"
         android:text="Total Price"
+        android:focusable="false"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -150,7 +151,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="Order"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,11 +170,23 @@
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/totalTextView"
         app:layout_constraintTop_toTopOf="@+id/totalTextView" />
+
+    <ImageView
+        android:id="@+id/OrderImage"
+        android:layout_width="273dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/demo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

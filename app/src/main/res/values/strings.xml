@@ -2,8 +2,15 @@
     <string name="app_name">Assignment345</string>
     <string-array name="meal">
         <item>Select..</item>
-        <item>Quater Chicken meal with fries</item>
-        <item>English muffin with wedges</item>
-        <item>10 pc chicken nuggets</item>
+        <item>Whole Eggs</item>
+        <item>Leafy Greens</item>
+        <item>Salmon</item>
+        <item>Cruciferous Vegetables</item>
+        <item>Lean Beef and Chicken Breast</item>
+        <item>Boiled Potatoes</item>
+        <item>Tuna</item>
+        <item>Beans and Legumes</item>
+        <item>Soups</item>
+        <item>Cottage Cheese</item>
     </string-array>
 </resources>
