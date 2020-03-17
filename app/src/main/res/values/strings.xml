@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Assignment345</string>
+    <string-array name="meal">
+        <item>Select..</item>
+        <item>Quater Chicken meal with fries</item>
+        <item>English muffin with wedges</item>
+        <item>10 pc chicken nuggets</item>
+    </string-array>
+</resources>
