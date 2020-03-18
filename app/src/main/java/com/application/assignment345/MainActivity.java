@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -48,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         amount=findViewById(R.id.amountTextView);
         check=findViewById(R.id.checkBox);
         image=findViewById(R.id.OrderImage);
+
+
 
         btn=findViewById(R.id.button);
         final int[] imageArray = {
@@ -163,6 +166,9 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,6 +176,9 @@ public class MainActivity extends AppCompatActivity {
                 if(check.isChecked() && index>0 && quantity>0 ){
                     Toast.makeText(MainActivity.this, "Order confirmed..  " , Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                   intent.putExtra("order","whole eggs");
+                   intent.putExtra("quant","2");
+                   intent.putExtra("prices","4.99");
                     startActivity(intent);
                 }
 
